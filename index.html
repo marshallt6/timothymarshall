@@ -7,53 +7,84 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
   
-<body class="tool">
-  <div class="layout">
-    <aside class="side">
-      <div class="logo">TM</div>
-      <div class="who">
-        <div class="name">Timothy Marshall</div>
-        <div class="sub">EE • Embedded • Automotive</div>
-      </div>
 
-      <nav class="menu">
-        <a class="active" href="./">Overview</a>
+<body>
+  <header class="site">
+    <nav class="nav">
+      <a class="brand" href="./">TM</a>
+      <div class="navlinks">
+        <a class="active" href="./">Home</a>
         <a href="projects.html">Projects</a>
         <a href="resume.pdf">Resume</a>
         <a href="https://github.com/marshallt6" target="_blank" rel="noreferrer">GitHub</a>
-      </nav>
+        <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </nav>
+  </header>
 
-      <div class="foot">
-        <div class="tiny">Portfolio</div>
-        <div class="mono">marshallt6.github.io/timothymarshall</div>
+  <div class="shell">
+    <aside class="card side">
+      <h2>Sections</h2>
+      <nav class="menu">
+        <a class="active" href="./">Overview</a>
+        <a href="projects.html">Project Case Studies</a>
+        <a href="resume.pdf">Resume PDF</a>
+      </nav>
+      <div class="tiny">
+        <div><strong>Portfolio:</strong> marshallt6.github.io/timothymarshall</div>
+        <div style="margin-top:6px;"><strong>Email:</strong> <a class="textlink" href="mailto:youremail@example.com">youremail@example.com</a></div>
       </div>
     </aside>
 
     <main class="main">
-      <section class="panel">
-        <h1>Overview</h1>
-        <p>
-          Hands-on electrical engineer focused on building and debugging real systems:
-          MCU firmware, CAN networks, sensors, controls, and validation setups.
+      <section class="card hero">
+        <h1>Timothy Marshall</h1>
+        <p class="tagline">Electrical Engineer • Embedded Systems • Automotive & Robotics</p>
+        <p class="summary">
+          I’m an electrical engineer with hands-on experience in embedded systems, automotive electronics,
+          and physical system integration. I focus on designing, debugging, and validating real hardware
+          — from microcontroller firmware to vehicle-level systems.
         </p>
+        <div class="cta">
+          <a class="button primary" href="projects.html">View Projects</a>
+          <a class="button" href="resume.pdf">Download Resume</a>
+        </div>
       </section>
 
-      <section class="panel grid">
-        <div class="tile">
-          <div class="k">Embedded</div>
-          <div class="v">C/C++ • Python • MCU</div>
-        </div>
-        <div class="tile">
-          <div class="k">Automotive</div>
-          <div class="v">CAN • Diagnostics • Test</div>
-        </div>
-        <div class="tile">
-          <div class="k">Robotics</div>
-          <div class="v">Integration • Sensors • Controls</div>
+      <section class="card section">
+        <h2 style="margin:0 0 8px;">What you’ll find here</h2>
+        <p class="summary" style="margin:0;">
+          Short, technical project write-ups with real photos, block diagrams, tools used, and the debugging story.
+        </p>
+
+        <div class="grid">
+          <article class="card project">
+            <h3>Embedded / Controls</h3>
+            <p>Microcontrollers, sensors, timing, C/C++, Python, real bring-up & fixes.</p>
+            <a class="textlink" href="projects.html">Go to projects →</a>
+          </article>
+
+          <article class="card project">
+            <h3>Automotive / CAN</h3>
+            <p>Diagnostics, communication, validation mindset, bench + vehicle testing.</p>
+            <a class="textlink" href="projects.html">Go to projects →</a>
+          </article>
         </div>
       </section>
     </main>
   </div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <span>© <span id="y"></span> Timothy Marshall</span>
+      <span>•</span>
+      <a class="textlink" href="projects.html">Projects</a>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("y").textContent = new Date().getFullYear();
+  </script>
 </body>
 
 
