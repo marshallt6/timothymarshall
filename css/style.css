@@ -3,7 +3,7 @@
   --bg: #ffffff;
   --text: #0f172a;
   --muted: #475569;
-  --border: rgba(15, 23, 42, 0.10);
+  --border: rgba(15, 23, 42, 0.14);
   --card: #ffffff;
   --shadow: 0 10px 30px rgba(2, 6, 23, 0.08);
   --accent: #b45309;
@@ -17,10 +17,12 @@ html,body{ height:100%; }
 body{
   margin:0;
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
-  background:
-    radial-gradient(1200px 600px at 12% 0%, color-mix(in srgb, var(--accent) 26%, transparent), transparent 56%),
-    radial-gradient(900px 500px at 92% 18%, color-mix(in srgb, var(--accent2) 22%, transparent), transparent 58%),
-    var(--bg);
+ background:
+  radial-gradient(1200px 700px at 12% 0%, color-mix(in srgb, var(--accent) 30%, transparent), transparent 56%),
+  radial-gradient(900px 540px at 92% 18%, color-mix(in srgb, var(--accent2) 26%, transparent), transparent 58%),
+  linear-gradient(180deg, rgba(2, 6, 23, 0.03), transparent 28%),
+  var(--bg);
+
   color: var(--text);
   line-height: 1.55;
 }
@@ -139,6 +141,18 @@ h1{ margin: 0 0 6px; font-size: 34px; letter-spacing: -0.02em; }
 }
 .footer-inner{ display:flex; gap:10px; align-items:center; justify-content:center; flex-wrap:wrap; }
 .sep{ opacity:0.5; }
+
+main.container{
+  padding-bottom: 6px;
+}
+
+.hero{
+  margin-top: 24px;
+}
+
+.grid{
+  margin-top: 16px;
+}
 
 @media (max-width: 880px){
   .grid{ grid-template-columns: 1fr; }
